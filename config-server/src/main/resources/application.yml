@@ -1,13 +1,12 @@
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    service-url:
-      defaultZone: http//${eureka.instance.hostname}:${server.port}/eureka/
 server:
-  port: 5000
+  port: 8888
 spring:
-  config:
-    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations

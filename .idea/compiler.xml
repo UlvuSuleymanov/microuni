@@ -7,16 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="post" />
         <module name="user" />
         <module name="gateway" />
         <module name="discovery" />
-      </profile>
-      <profile name="Annotation profile for config-server" enabled="true">
-        <sourceOutputDir name="../../../config-server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../../config-server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
       </profile>
     </annotationProcessing>
   </component>

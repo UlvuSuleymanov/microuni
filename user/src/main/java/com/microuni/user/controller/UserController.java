@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("api/user")
 public class UserController {
     public static List<User> userList = new ArrayList<>();
     public static Long id=0L;
@@ -31,9 +31,9 @@ public class UserController {
     }
 
 
-    @GetMapping
-    public List<User> getUserList(){
-        return userList;
+    @GetMapping("/test")
+    public String getUserList(){
+        return "user endpoint works";
     }
 
 

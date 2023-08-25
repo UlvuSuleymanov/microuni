@@ -9,7 +9,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("post")
+@RequestMapping("api/post")
 public class PostController {
     public static List<Post> posts = new ArrayList<>();
     public static Long id=0L;
@@ -24,9 +24,10 @@ public class PostController {
         return posts;
     }
 
-    @GetMapping
-    public List<Post> getUserList(){
-        return posts;
+    @GetMapping("/test")
+    public String getUserList(){
+
+        return "Post service works fine";
     }
 
     @GetMapping("/{userId}")
