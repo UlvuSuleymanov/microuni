@@ -4,13 +4,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import java.io.Serializable;
 import java.util.List;
 @Data
-@Entity
-@Table(name = "user")
+@RequiredArgsConstructor
+@AllArgsConstructor
+@Document
 public class User implements Serializable {
 
     @Id
@@ -33,8 +36,10 @@ public class User implements Serializable {
     private boolean accountNonLocked;
 
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "role_user", joinColumns = {
-            @JoinColumn(name = "user_id", referencedColumnName = "id") }, inverseJoinColumns = {
+    @JoinTable(name = "role_user",
+            joinColumns = {
+            @JoinColumn(name = "user_id", referencedColumnName = "id") },
+            inverseJoinColumns = {
             @JoinColumn(name = "role_id", referencedColumnName = "id") })
     private List<Role> roles;
 

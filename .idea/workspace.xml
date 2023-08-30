@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0e80234-0a7a-4dd5-8481-15fca58ab1c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/config/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/entity/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/model/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/model/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/java/com/microuni/auth/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/gateway.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/gateway.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/user.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/model/Post.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/microuni/user/service/PostClient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/toshiba/Desktop/projects/microuni/auth/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/toshiba/Desktop/projects/goodbot&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -69,7 +75,7 @@
       <recent name="com.microuni.user.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AuthApplication">
+  <component name="RunManager" selected="Application.UserApplication">
     <configuration name="AuthApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.microuni.auth.AuthApplication" />
       <module name="auth" />
@@ -137,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthApplication" />
         <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.DiscoveryApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Application.AuthApplication" />
       </list>
     </recent_temporary>
   </component>

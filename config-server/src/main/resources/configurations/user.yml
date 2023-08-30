@@ -9,3 +9,7 @@ server:
 spring:
   application:
     name: user
+  data:
+    mongodb:
+      uri: mongodb+srv://ulvu:pass@cluster0.id9f5gp.mongodb.net/?retryWrites=true&w=majority
+      database: mygrocerylist
