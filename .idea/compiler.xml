@@ -7,22 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
         <module name="post" />
-        <module name="user" />
         <module name="auth" />
-        <module name="gateway" />
         <module name="discovery" />
+        <module name="roommate" />
+        <module name="user" />
+        <module name="config" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="auth" options="-parameters" />
-      <module name="config-server" options="-parameters" />
+      <module name="config" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="post" options="-parameters" />
+      <module name="roommate" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>
