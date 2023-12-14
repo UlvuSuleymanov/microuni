@@ -11,5 +11,9 @@ spring:
     name: user
   data:
     mongodb:
-      uri: mongodb+srv://ulvu:pass@cluster0.id9f5gp.mongodb.net/?retryWrites=true&w=majority
-      database: mygrocerylist
+      host: localhost
+      port: 27017
+      database: test
+  mongo:
+    username: root
+    password: root

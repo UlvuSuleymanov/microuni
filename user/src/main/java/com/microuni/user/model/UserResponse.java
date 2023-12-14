@@ -11,9 +11,5 @@ public class UserResponse {
     private String name;
     private String username;
 
-    public UserResponse(User user) {
-        id = user.getId();
-        name = user.getName();
-        username = user.getUsername();
-    }
+
 }

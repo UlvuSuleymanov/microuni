@@ -22,17 +22,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse addUser(UserRequest userRequest) {
-        User user = User
-                .builder()
-                .name(userRequest.getName())
-                .email(userRequest.getEmail())
-                .username(userRequest.getUsername())
-                .password(userRequest.getPassword())
-                .build();
+        User user = new User();
 
         userRepository.save(user);
 
-        return new UserResponse(user);
+        return new UserResponse( );
     }
 
     @Override
@@ -43,7 +37,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserResponse> getUsers() {
      return   userRepository.findAll().stream().map(
-               user->new UserResponse(user)
+               user->new UserResponse( )
        ).collect(Collectors.toList());
     }
 }
